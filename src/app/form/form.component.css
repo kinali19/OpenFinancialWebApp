@@ -1,0 +1,80 @@
+
+form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    padding: 3%;
+  }
+  .header{
+    border-bottom: 1px solid lightgray;
+    background-color: #FAFBFD;
+    padding: 20px;
+    color: grey;
+    border-radius: 20px 20px 0 0;
+    font-weight: 700;
+  }
+  .card.form-card{
+    border-radius: 20px;
+    z-index: 99;
+  }
+  .full-width {
+    width: 100%;
+  }
+  .mat-slider-horizontal{height:15px;}
+  .text-small{
+      font-size: 12px;
+      color: lightgray;
+      font-weight: 700;
+      margin-left: 10px;
+  }
+  .text-right{
+      float: right;
+      margin-right: 10px;
+  }
+  .mat-slider{    vertical-align: top;}
+  .mat-slide-toggle{height: auto; line-height: normal;}
+
+  
+  .labelBeforeSlide {
+    vertical-align: middle;
+    margin-right:0.5rem;
+    margin-bottom:0.5rem;
+  }
+  .credit-card{
+    border-radius: 0 20px 20px 0;
+    top: 25%;
+    background-color: #663399;
+    padding:10%;
+    text-align: center;
+  }
+  .credit-card span{
+    color: white;
+    font-size: 15px;
+  }
+  .credit-card label{
+    color: rgba(255, 255, 255, 0.562);
+    font-size: 15px;
+  }
+  
+  .btnGetMoney {
+    box-shadow: 0px 0px 20px #00000033;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    background: #ffffff;
+    color: #663399;
+    width: 120px;
+    font-weight: 500;
+    font-size: 15px;
+    
+}
+.mt-150{
+  margin-top: 150px;
+}  
+.imgBottomRight{
+  bottom: 0;
+  position: absolute;
+  right: -170px;
+  bottom: -45px;
+  opacity: 0.5;
+
+}

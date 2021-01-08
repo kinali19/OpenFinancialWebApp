@@ -1,0 +1,84 @@
+.detail-screen {
+    background: transparent url('/assets/images/sol_wave_bg.svg') 0% 0% no-repeat padding-box;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    margin-top: 10%;
+}
+
+.detail-screen .row {
+    margin: 2% 4%;
+}
+
+.card {
+    box-shadow: 0px 0px 30px #2321321F;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.card span {
+    font-size: 15px;
+    text-align: left;
+    line-height: 19px;
+    color: #333333;
+    font-family: 'Montserrat-SemiBold';
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+.card p {
+    font-size: 15px;
+    text-align: left;
+    line-height: 19px;
+    color: #999999;
+    font-family: 'Montserrat-Regular';
+    margin-top: 8px;
+}
+
+.card-img-top {
+    border-radius: 20px;
+}
+
+.card img {
+    display: block;
+}
+
+.card-img-overlay span, .card-img-overlay p {
+    color: #FFFFFF;
+}
+
+.content .border {
+    background-image: radial-gradient(circle, black 3px, transparent 3px), linear-gradient(to right, black, black), radial-gradient(circle, black 3px, transparent 3px);
+    background-repeat: no-repeat;
+    /* background-size: 6px 6px, calc(100% - 8px) 6px, 6px 6px; */
+    background-position: left bottom, center bottom, right bottom;
+    display: block;
+    outline: none;
+    border: none;
+    width: 150px;
+    height: 8px;
+    border-radius: 13px;
+    opacity: 0.7;
+    margin-top: 38px;
+}
+
+.content p {
+    color: #777777;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Montserrat-Regular';
+}
+
+.content button {
+    box-shadow: 0px 0px 20px #00000033;
+    border: 2px solid #663399;
+    border-radius: 24px;
+    background: transparent;
+    color: #663399;
+    padding: 10px 38px;
+}
+.flexbox{display: flex;
+    justify-content: center;
+    align-items: center;}

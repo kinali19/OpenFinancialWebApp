@@ -1,0 +1,63 @@
+<div class="row mt-150 justify-content-center">
+  <div class="col-sm-5 p-0">
+    <div class="card card-block form-card">
+      <h6 class="text-center header">Eligibility Calculator</h6>
+      <form>
+        <mat-form-field class="full-width" floatLabel="always" appearance="none">
+          <mat-label>Monthly Income</mat-label>
+          <span class="iconify" data-icon="mdi-currency-inr" data-inline="false"></span>
+          <h5 class="mt-2"> {{ monthlyValue | customCurrency}}</h5>
+          <mat-slider min="100000" max="300000" tickInterval="auto" (input)="changeValue($event)" step="10"
+            value={{monthlyValue}} class="full-width"></mat-slider>
+          <span class="text-small">{{ minValue |customCurrency}}</span>
+          <span class="text-small text-right">{{ maxValue | customCurrency}}</span>
+          <textarea matInput hidden></textarea>
+        </mat-form-field>
+
+
+        <mat-form-field class="full-width" floatLabel="always" appearance="none">
+          <mat-label>Monthly Expense</mat-label>
+          <span class="iconify" data-icon="mdi-currency-inr" data-inline="false"></span>
+          <h5 class="mt-2"> {{ monthlyExpenseValue | customCurrency}}</h5>
+          <mat-slider min="100000" max="300000" tickInterval="auto" (input)="changeValue($event)" step="10"
+            value={{monthlyValue}} class="full-width"></mat-slider>
+          <textarea matInput hidden></textarea>
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+          <mat-label>Repayment Tenure</mat-label>
+          <mat-select [(value)]="selected">
+            <mat-option *ngFor="let opt of repaymentList" [value]="opt.id">
+              {{opt.title}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="full-width slideToggle" floatLabel="always" appearance="none">
+          <mat-label class="labelBeforeSlide">Do you have any existing loans?</mat-label>
+          <mat-slide-toggle [checked]="checked" class=" text-right"></mat-slide-toggle>
+          <textarea matInput hidden></textarea>
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <mat-label>EMI of existing loan(optional)</mat-label>
+          <input matInput placeholder="" [value]="existingLoan | currency:'INR' : true:'1.0-0'">
+        </mat-form-field>
+      </form>
+
+    </div>
+    <div class="imgBottomRight"> <img src="/assets/images/accounting_dots.svg" class="img-fluid" /></div>
+  </div>
+  <div class="col-sm-3 p-0">
+    <div class="card card-block credit-card">
+      <div>
+        <label>Loan Amount</label><br />
+        <span>{{minValue | customCurrency}}</span>
+      </div>
+      <div class="mt-4">
+        <label>Your EMI will be</label><br />
+        <span>{{existingLoan | customCurrency}}</span>
+      </div>
+      <button class="btn btnGetMoney mt-4 align-self-center">GET MONEY</button>
+    </div>
+  </div>
+</div>
